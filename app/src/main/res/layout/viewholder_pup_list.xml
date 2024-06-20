@@ -19,7 +19,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/item_1" />
+        app:srcCompat="@drawable/item_1"
+        tools:srcCompat="@drawable/item_1" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -38,7 +39,9 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:src="@drawable/star" />
+            app:srcCompat="@drawable/star"
+            tools:src="@drawable/star"
+            tools:srcCompat="@drawable/star" />
 
         <TextView
             android:id="@+id/scoreText"
