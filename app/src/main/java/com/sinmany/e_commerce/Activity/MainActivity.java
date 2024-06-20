@@ -1,6 +1,8 @@
 package com.sinmany.e_commerce.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,6 +28,11 @@ public class MainActivity extends AppCompatActivity {
 
         statuseBarColor();
         initRecycleView();
+        buttonNameNavigation();
+    }
+
+    private void buttonNameNavigation() {
+        binding.cartBtn.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, CartActivity.class)));
     }
 
     private void statuseBarColor() {
