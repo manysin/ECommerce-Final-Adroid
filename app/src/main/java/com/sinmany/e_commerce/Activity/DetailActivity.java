@@ -1,11 +1,14 @@
 package com.sinmany.e_commerce.Activity;
 
 import android.os.Bundle;
+import android.view.Window;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import com.bumptech.glide.Glide;
 import com.sinmany.e_commerce.Helper.ManagmentCart;
+import com.sinmany.e_commerce.R;
 import com.sinmany.e_commerce.databinding.ActivityDetailBinding;
 import com.sinmany.e_commerce.domain.PopularDomain;
 
@@ -24,6 +27,13 @@ public class DetailActivity extends AppCompatActivity {
 
         getBundle();
         managmentCart = new ManagmentCart(this);
+        statuseBarColor();
+    }
+
+    private void statuseBarColor() {
+        Window window = DetailActivity.this.getWindow();
+        window.setStatusBarColor(ContextCompat.getColor(DetailActivity.this, R.color.white));
+
     }
 
     private void getBundle() {
