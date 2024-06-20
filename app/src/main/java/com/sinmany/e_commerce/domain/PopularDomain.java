@@ -1,11 +1,13 @@
 package com.sinmany.e_commerce.domain;
 
-public class PopularDomain {
+import java.io.Serializable;
+
+public class PopularDomain implements Serializable {
     private String title;
     private String picUrl;
     private int review;
     private double score;
-    private int numberInchart;
+    private int numberInCart;
     private double price;
     private String description;
 
@@ -50,12 +52,12 @@ public class PopularDomain {
         this.score = score;
     }
 
-    public int getNumberInchart() {
-        return numberInchart;
+    public int getNumberInCart() {
+        return numberInCart;
     }
 
-    public void setNumberInchart(int numberInchart) {
-        this.numberInchart = numberInchart;
+    public void setNumberInCart(int numberInCart) {
+        this.numberInCart = numberInCart;
     }
 
     public double getPrice() {

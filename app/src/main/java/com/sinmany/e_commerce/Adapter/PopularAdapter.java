@@ -1,6 +1,7 @@
 package com.sinmany.e_commerce.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 
 import android.view.View;
@@ -11,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.GranularRoundedCorners;
+import com.sinmany.e_commerce.Activity.DetailActivity;
 import com.sinmany.e_commerce.domain.PopularDomain;
 import com.sinmany.e_commerce.databinding.ViewholderPupListBinding;
 
@@ -47,11 +49,10 @@ public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.Viewhold
                 .transform(new GranularRoundedCorners(30, 30, 0,0))
                 .into(binding.pic);
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(context, DetailActivity.class);
+            intent.putExtra("object", items.get(position));
+            context.startActivity(intent);
         });
     }
 
