@@ -26,11 +26,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="24dp"
+                    android:padding="8dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:srcCompat="@drawable/arrow"
-                    android:padding="8dp"
-                    />
+                    app:srcCompat="@drawable/arrow"
+                    tools:srcCompat="@drawable/arrow" />
 
                 <ImageView
                     android:id="@+id/imageView6"
@@ -40,6 +40,7 @@
                     app:layout_constraintBottom_toBottomOf="@+id/backBtn"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/backBtn"
+                    app:srcCompat="@drawable/bookmark"
                     tools:srcCompat="@drawable/bookmark" />
 
                 <ImageView
@@ -50,6 +51,7 @@
                     app:layout_constraintBottom_toBottomOf="@+id/imageView6"
                     app:layout_constraintEnd_toStartOf="@+id/imageView6"
                     app:layout_constraintTop_toTopOf="@+id/imageView6"
+                    app:srcCompat="@drawable/share"
                     tools:srcCompat="@drawable/share" />
 
                 <View
@@ -120,6 +122,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
+                    app:srcCompat="@drawable/star"
                     tools:srcCompat="@drawable/star" />
 
                 <TextView
@@ -144,6 +147,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
 
+                    app:srcCompat="@drawable/review"
                     tools:srcCompat="@drawable/review" />
 
                 <TextView

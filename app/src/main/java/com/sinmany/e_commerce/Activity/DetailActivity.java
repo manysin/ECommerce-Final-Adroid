@@ -13,7 +13,7 @@ public class DetailActivity extends AppCompatActivity {
 
     private ActivityDetailBinding binding;
     private PopularDomain object;
-    private int numberOrder = 1;
+    private int numberOrder = 0;
     private ManagmentCart managmentCart;
 
     @Override
