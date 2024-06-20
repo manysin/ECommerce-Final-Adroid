@@ -139,19 +139,30 @@
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button"
+                    android:id="@+id/button2"
                     style="@android:style/Widget.Button"
                     android:layout_width="80dp"
                     android:layout_height="30dp"
                     android:layout_marginEnd="16dp"
-                    android:background="@drawable/purple_background"
-                    android:text="Buy now"
                     android:textColor="@color/white"
+                    android:background="@drawable/purple_background"
+                    android:text="Buy Now"
                     app:layout_constraintBottom_toBottomOf="@+id/textView8"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toEndOf="@+id/imageView3"
-                    app:layout_constraintTop_toTopOf="@+id/textView8" />
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+<!--                <androidx.appcompat.widget.AppCompatButton-->
+<!--                    android:id="@+id/button"-->
+<!--                    style="@android:style/Widget.Button"-->
+<!--                    android:layout_width="80dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:background="@drawable/purple_background"-->
+<!--                    android:text="Buy now"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@+id/textView8"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintHorizontal_bias="0.0"-->
+<!--                    app:layout_constraintStart_toEndOf="@+id/imageView3"-->
+<!--                    app:layout_constraintTop_toTopOf="@+id/textView8" />-->
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -376,6 +387,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center"
+                        app:srcCompat="@drawable/btn_1"
                         tools:srcCompat="@drawable/btn_1" />
 
                     <TextView
@@ -398,6 +410,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center"
+                        app:srcCompat="@drawable/btn_2"
                         tools:srcCompat="@drawable/btn_2" />
 
                     <TextView
@@ -443,6 +456,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center"
+                        app:srcCompat="@drawable/btn_3"
                         tools:srcCompat="@drawable/btn_3" />
 
                     <TextView
@@ -465,6 +479,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center"
+                        app:srcCompat="@drawable/btn_4"
                         tools:srcCompat="@drawable/btn_4" />
 
                     <TextView
