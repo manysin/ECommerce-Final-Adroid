@@ -13,8 +13,8 @@
         android:theme="@style/Theme.Ecommerce"
         tools:targetApi="31">
         <activity
-            android:name=".Activity.LoginActivity"
-            android:exported="false" />
+            android:name=".Activity.MainActivity"
+            android:exported="true" />
         <activity
             android:name=".Activity.EndOrderActivity"
             android:exported="true" />
@@ -25,7 +25,7 @@
             android:name=".Activity.DetailActivity"
             android:exported="false" />
         <activity
-            android:name=".Activity.MainActivity"
+            android:name=".Activity.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

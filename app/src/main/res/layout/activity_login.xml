@@ -91,7 +91,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTexPassword" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
+        android:id="@+id/loginBtn"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:text="Login"
@@ -113,9 +113,9 @@
         android:textSize="10sp"
         android:layout_marginTop="32dp"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintEnd_toEndOf="@+id/loginBtn"
+        app:layout_constraintStart_toStartOf="@+id/loginBtn"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtn" />
 
     <TextView
         android:id="@+id/textView31"
