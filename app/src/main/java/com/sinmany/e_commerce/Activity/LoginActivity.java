@@ -37,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (userEdt.getText().toString().isEmpty() || passEdt.getText().toString().isEmpty()){
                     Toast.makeText(LoginActivity.this, "Please fill the login form!", Toast.LENGTH_SHORT).show();
-                }else if (userEdt.getText().toString().equals("admin")&& passEdt.getText().toString().equals("12345")){
+                }else if (userEdt.getText().toString().equals("user")&& passEdt.getText().toString().equals("12345")){
                     startActivity(new Intent(LoginActivity.this, MainActivity.class));
                 }
             }
