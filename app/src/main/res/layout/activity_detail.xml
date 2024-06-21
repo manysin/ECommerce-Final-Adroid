@@ -201,7 +201,7 @@
                 android:background="@drawable/btn_background"
                 android:textColor="@color/white"
                 android:layout_height="wrap_content"
-                android:text="Buy Now"
+                android:text="Add to Cart"
                 android:textSize="16sp"
                 />
         </LinearLayout>

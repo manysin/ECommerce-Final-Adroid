@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Ecommerce"
         tools:targetApi="31">
         <activity
+            android:name=".Activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.EndOrderActivity"
+            android:exported="true" />
+        <activity
             android:name=".Activity.CartActivity"
             android:exported="false" />
         <activity

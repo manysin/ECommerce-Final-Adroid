@@ -1,5 +1,6 @@
 package com.sinmany.e_commerce.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -22,8 +23,13 @@ public class CartActivity extends AppCompatActivity {
         binding=ActivityCartBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         managmentCart = new ManagmentCart(this);
+        buttonNameNavigation();
         setVariable();
         initList();
+    }
+
+    private void buttonNameNavigation() {
+        binding.orderBtn.setOnClickListener(v -> startActivity(new Intent(CartActivity.this, EndOrderActivity.class)));
     }
 
     private void initList() {
